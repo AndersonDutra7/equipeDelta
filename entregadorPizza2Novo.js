@@ -106,6 +106,53 @@ function menuPrincipal(){
     menuPrincipal()
 }
 
+function eventoAleatorio(){
+const chance = Math.floor(Math.random() * 100) + 1;
+
+if (chance > 35){
+    return;
+}
+
+const evento = Math.floor(Math.random() * 5) + 1;
+
+switch(evento){
+    case 1:
+        console.log("\nUM CAMINHÃO CAIU DO CÉU!");
+        console.log("Você desviou por pouco e perdeu 20 litros de combustível!");
+        combustivel -= 20;
+        break;
+
+    case 2:
+        console.log("\nCLIENTE GENEROSO!");
+        console.log("Você ganhou 15 litros de combustível!");
+        combustivel = Math.min(combustivel + 15, 100);
+        break;
+
+    case 3:
+        console.log("\nTRÂNSITO INFERNAL!");
+        console.log("Você perdeu 10 litros de combustível!");
+        combustivel -= 10;
+        break;
+
+    case 4:
+        console.log("\nPOSTO SURPRESA!");
+        console.log("Você encontrou combustível grátis e ganhou 25 litros!");
+        combustivel = Math.min(combustivel + 25, 100);
+        break;
+
+    case 5:
+        console.log("\nUMA GALINHA INVADIU A PISTA!");
+        console.log("Você desviou e perdeu 5 litros de combustível!");
+        combustivel -= 5;
+        break;
+}
+
+if (combustivel < 0){
+    combustivel = 0;
+}
+
+}
+
 console.log("================")
 console.log("ENTREGADOR DE PIZZA")
 console.log("Complete suas entregas para finalizar o jogo")
