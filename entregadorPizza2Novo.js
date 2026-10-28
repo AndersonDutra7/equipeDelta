@@ -4,6 +4,8 @@ let combustivel = 100;
 let entregasRealizadas = 0;
 let totalEntregas = 5;
 
+const nome = rl.question("\nDigite o nome do entregador?: ")
+
 //MOSTRA OS STATUS DO JOGADOR
 function mostrarStatus(){
     console.log("=================")
@@ -47,11 +49,14 @@ function verificarFimDoJogo(){
             console.log("A gasolina acabou antes de completar todas as entregas")
             console.log(`Entregas realizadas: ${entregasRealizadas}/${totalEntregas}`)
 
+    
+
         
         return true;
     }
 
     if (entregasRealizadas >= totalEntregas){
+        console.log(`\nPARABÉNS ${nome}`)
         console.log("Você realizou todas as entregas com sucesso")
         console.log(`Entregas realizadas: ${entregasRealizadas}`)
         console.log(`Combustivel restante: ${combustivel} litros`)
@@ -71,6 +76,8 @@ function menuPrincipal(){
     if (verificarFimDoJogo()){
         return
     }
+
+    
 
     mostrarStatus()
 
