@@ -4,7 +4,7 @@ let combustivel = 100;
 let entregasRealizadas = 0;
 let totalEntregas = 5;
 
-const nome = rl.question("\nDigite o nome do entregador?: ")
+const nome = rl.question("\nDigite o nome do entregador?oi: ")
 
 //MOSTRA OS STATUS DO JOGADOR
 function mostrarStatus(){
