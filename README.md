@@ -9,18 +9,16 @@ Resumo do que o jogo faz.
 - Líder (Tech Lead): Victor Lima Carvalho da Silva
 - Desenvolvedor(a) 1: Kauan dos Santos Goll
 - Desenvolvedor(a) 2: Lorenzo Oliveira Valese
-- Documentador(a) & QA: Luiza Soares 
+- Documentador(a) & QA: Luiza de Alencar Melo Fonseca 
 ## Fluxo de Trabalho
-Regras de branches, padrão de commits e Pull Requests adotados.
+Como ocorreram problemas nas máquinas dos desenvolvedores ao realizar os commits, algumas implementações foram feitas diretamente na branch main. Porém, idealmente, as mudanças seriam feitas utilizando o padrão "feature/exemplo-feature", como o que foi feito com a branch "feature/eventos-aleatorios" 
 ## Tecnologias Utilizadas
 JavaScript, Node.js, Git e GitHub
 ## Histórico de Versões (Changelog)
 ### [2.0.0] - AAAA-MM-DD
-- Adicionado: ...
-- Alterado: ...
-- Corrigido: ...
+- Alterado/Corrigido: A função eventoAleatorio foi chamada no jogo (na versão anterior, foi apenas implementada)
 ### [1.2.0] - 2026-10-28 (Aprovada em 2026-11-03)
-- Adicionada função eventoAleatorio, que de forma autoexplicativa, adicionava 
+- Adicionada função eventoAleatorio, que de forma autoexplicativa, adiciona a chance de ocorrer eventos que podem alterar a quantidade de combustível do entregador.
 ### [1.1.0] - 2026-10-28
 - Adicionada feature para registrar o nome do jogador.
 ### [1.0.0] - 2026-10-05
