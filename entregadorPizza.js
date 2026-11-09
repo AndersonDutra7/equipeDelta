@@ -1,3 +1,4 @@
+
 const rl = require('readline-sync');
 
 let combustivel = 100;
@@ -26,7 +27,10 @@ function entregarPizza(){
 
     console.log(`\nPizza entregue com sucesso!`)
     console.log(`\nA entrega consumiu ${consumo} litros de combustivel`)
+
+    eventoAleatorio();
 }
+
 //FUNÇÃO PARA CALCULAR QUANDO O JOGADOR CLICA EM ABASTECER MOTO
 function abastecerMoto(){
     const combustivelAntes = combustivel;
